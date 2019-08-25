@@ -1,6 +1,6 @@
 <template>
 <div>
-  <router-view></router-view>
+  <span>와 메인페이지 !</span>
 </div>
 </template>
 
