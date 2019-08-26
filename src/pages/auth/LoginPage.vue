@@ -9,7 +9,7 @@
     <input type="password" placeholder="디미고인 비밀번호" class="loginbox__text">
   </div>
   <span class="loginform__textbutton" @click="$router.push({name: 'main_page'})">디미고 계정으로 로그인</span>
-  <button  class="dimigoin" onclick="https://dimigo.in/"><img src="./../../assets/dimigoin_logo.png" class="dimigoinimg">디미고인 바로가기</button>
+  <button  class="dimigoin" onclick="window.open('https://dimigo.in') "><img src="./../../assets/dimigoin_logo.png" class="dimigoinimg">디미고인 바로가기</button>
 </div>
 </div>
 </template>
