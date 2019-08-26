@@ -85,6 +85,7 @@ export default {
     border: 0.1em solid white;
     padding-left: 1em;
     outline-style: none;
+
   }
   ::placeholder{
     color: rgb(211, 211, 211);
