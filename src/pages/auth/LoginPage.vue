@@ -9,7 +9,7 @@
     <input type="password" placeholder="디미고인 비밀번호" class="loginbox__text">
   </div>
   <span class="loginform__textbutton" @click="$router.push({name: 'main_page'})">디미고 계정으로 로그인</span>
-  <button><img src="./../../assets/dimigoin_logo.png">디미고인 바로가기</button>
+  <button  class="dimigoin" onclick="https://dimigo.in/"><img src="./../../assets/dimigoin_logo.png" class="dimigoinimg">디미고인 바로가기</button>
 </div>
 </div>
 </template>
@@ -58,6 +58,7 @@ export default {
     border: 0.1em solid white;
     padding-left: 1em;
     outline-style: none;
+    
   }
   ::placeholder{
     color: rgb(211, 211, 211);
@@ -65,4 +66,24 @@ export default {
     font-weight: 400;
   }
 }
+
+.dimigoin{
+  background-color:#ffffff;
+  border:1px solid #cbcbcb;
+  font-family: 'NanumSquare',sans-serif;
+  font-weight: 400;
+  font-size:1em;
+  border-radius: 0.4em;
+  width:104%;
+  margin-top:6rem;
+}
+
+.dimigoinimg{
+  width:34px;
+ vertical-align: bottom;
+ margin:auto;
+ float:left;
+}
+
+*:focus { outline:none; }
 </style>
