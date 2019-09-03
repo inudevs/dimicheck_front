@@ -1,14 +1,14 @@
 <template>
 <div>
-  <div class="mainform">
-    <ul class="mainform__list">
-      <li class="mainform__item" id="hover" @click="$router.push({name: 'student'})">
+  <div class="top">
+    <div class="top__left">
+      <div class="userinfo">
+        <span>안녕하세요</span>
+      </div>
+    </div>
+    <div class="top__right">
 
-    </li>
-    <li class="mainform__item" id="hover" @click="$router.push({name: 'student'})">
-
-    </li>
-    </ul>
+    </div>
   </div>
 </div>
 </template>
@@ -22,26 +22,25 @@ export default {
 <style lang="scss" scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
-.mainform {
-  margin-left: 8em;
+.top {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5em;
-  width: 370px;
+  display: flex;
+  width: 80%;
 
-  &__list {
-    display: grid;
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
-    grid-template-columns: 14em 14em 14em 14em;
-    grid-template-rows: 14em 14em 14em;
-
+  &__left {
+    width: 50%;
+    background-color: green;
   }
 
-  &__item {
-    display: block;
-    padding: 1.5em;
-    box-shadow: 10px 15px 20px 10px rgb(231, 231, 231);
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    cursor: pointer;
+  &__right {
+    width: 50%;
+    background-color: yellow;
   }
+}
+
+.userinfo {
+
 }
 </style>
