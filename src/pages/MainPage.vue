@@ -3,11 +3,11 @@
   <div class="mainform">
     <ul class="mainform__list">
       <li class="mainform__item" id="hover" @click="$router.push({name: 'student'})">
-      
-    </li>  
+
+    </li>
     <li class="mainform__item" id="hover" @click="$router.push({name: 'student'})">
-      
-    </li>  
+
+    </li>
     </ul>
   </div>
 </div>
@@ -33,10 +33,10 @@ export default {
     grid-row-gap: 2em;
     grid-template-columns: 14em 14em 14em 14em;
     grid-template-rows: 14em 14em 14em;
-      
+
   }
-  
-  &__item {    
+
+  &__item {
     display: block;
     padding: 1.5em;
     box-shadow: 10px 15px 20px 10px rgb(231, 231, 231);
