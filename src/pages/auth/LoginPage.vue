@@ -1,4 +1,3 @@
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 <template>
 <div>
 <div class="loginform">
@@ -31,36 +30,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.loginform{
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+.loginform {
   margin-left: 8em;
   margin-top: 9em;
   width: 370px;
-  &__textone{
+
+  &__textone {
     font-size: 3em;
-    font-family: 'NanumSquare',sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     font-weight: 200;
-  }
-  &__texttwo{
+   }
+
+  &__texttwo {
     font-size: 4em;
-    font-family: 'NanumSquare',sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
   }
-  &__textbutton{
+
+  &__textbutton {
     float: right;
     font-size: 1em;
-    font-family: 'NanumSquare',sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     font-weight: 700;
     color: rgb(255, 81, 191);
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
   }
-  &__dminbutton{
+
+  &__dminbutton {
     margin-top: 6em;
     width: 100%;
     text-align: left;
     font-size: 1em;
-    font-family: 'NanumSquare',sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -68,14 +74,17 @@ export default {
     border-radius: 0.4em;
     border: 0.06em solid rgb(211, 211, 211);
     outline-style: none;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
   }
 }
-.loginbox{
+
+.loginbox {
   margin-top: 3em;
-  &__text{
+
+  &__text {
     width: 96%;
     height: 2.8em;
     margin-top: 0.4em;
@@ -85,15 +94,16 @@ export default {
     border: 0.1em solid white;
     padding-left: 1em;
     outline-style: none;
-
   }
-  ::placeholder{
+
+  ::placeholder {
     color: rgb(211, 211, 211);
-    font-family: 'NanumSquare',sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
   }
 }
-#dminlogo{
+
+#dminlogo {
   width: 1.8em;
 }
 </style>
