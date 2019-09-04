@@ -1,22 +1,26 @@
 <template>
-<div>
-<div class="loginform">
-  <span class="loginform__textone">인원체크 도우미</span><br>
-  <span class="loginform__texttwo">디미체크</span>
-  <div class="loginbox">
-    <input type="text" placeholder="디미고인 아이디" class="loginbox__text"><br>
-    <input type="password" placeholder="디미고인 비밀번호" class="loginbox__text">
+<div class="main">
+  <div class="main__left">
+    <div class="loginform">
+      <span class="loginform__textone">인원체크 도우미</span><br>
+      <span class="loginform__texttwo">디미체크</span>
+      <div class="loginbox">
+        <input type="text" placeholder="디미고인 아이디" class="loginbox__text"><br>
+        <input type="password" placeholder="디미고인 비밀번호" class="loginbox__text">
+      </div>
+
+      <span class="loginform__textbutton" @click="$router.push({name: 'main_page'})">
+        디미고 계정으로 로그인
+      </span><br>
+      <button class="loginform__dminbutton" @click="openNewtap()">
+        <img src="./../../assets/dimigoin_logo.png" id="dminlogo">
+        디미고인 바로가기
+      </button>
+    </div>
   </div>
-
-  <span class="loginform__textbutton" @click="$router.push({name: 'main_page'})">
-    디미고 계정으로 로그인
-  </span><br>
-  <button class="loginform__dminbutton" @click="openNewtap()">
-    <img src="./../../assets/dimigoin_logo.png" id="dminlogo">
-    디미고인 바로가기
-  </button>
-
-</div>
+  <div class="main__right">
+    <img src="./../../assets/loginpage_img.png" id="rightimg">
+  </div>
 </div>
 </template>
 
@@ -33,6 +37,25 @@ export default {
 
 <style lang="scss" scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+#rightimg {
+  width: 90%;
+  height: auto;
+  margin-top: 7em;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+
+  &__left {
+    width: 40%;
+  }
+
+  &__right {
+    width: 60%;
+  }
+}
 
 .loginform {
   margin-left: 8em;
