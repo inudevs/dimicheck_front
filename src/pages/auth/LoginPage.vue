@@ -8,7 +8,6 @@
         <input type="text" placeholder="디미고인 아이디" class="loginbox__text"><br>
         <input type="password" placeholder="디미고인 비밀번호" class="loginbox__text">
       </div>
-
       <span class="loginform__textbutton" @click="$router.push({name: 'main_page'})">
         디미고 계정으로 로그인
       </span><br>
@@ -31,7 +30,6 @@ export default {
       window.open('https://dimigo.in')
     },
   },
-
 }
 </script>
 
@@ -60,7 +58,7 @@ export default {
 .loginform {
   margin-left: 8em;
   margin-top: 9em;
-  width: 370px;
+  width: 30em;
 
   &__textone {
     font-size: 3em;
