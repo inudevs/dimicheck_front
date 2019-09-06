@@ -9,9 +9,7 @@
           <input type="text" placeholder="디미고인 아이디" class="login__text"><br>
           <input type="password" placeholder="디미고인 비밀번호" class="login__text">
         </div>
-        <span class="login__loginbutton" @click="$router.push({name: 'main_page'})">
-        디미고 계정으로 로그인
-        </span><br>
+        <button class="login__loginbutton" @click="$router.push({name: 'main_page'})">디미고 계정으로 로그인</button>
         <button class="login__dminbutton" @click="openNewtap()">
           <img src="./../../assets/dimigoin_logo.png" id="dminlogo">
           디미고인 바로가기
@@ -70,10 +68,12 @@ export default {
 }
 
 .login {
-  width: 70%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
 
   &__subtitle {
     margin-left: 0.4em;
@@ -91,7 +91,7 @@ export default {
   }
 
   &__text {
-    width: 90%;
+    width: 100%;
     height: 2.8em;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
@@ -102,19 +102,22 @@ export default {
     outline-style: none;
     //border-radius로 인해 글자 + 인풋 밀어야됨
     //placeholder에 하면 인풋하는게 안밀리고, 여기다 밀면 둘다 밀리지만 div크기보다 커짐
-    padding-left: 1em;
   }
 
   &__loginbutton {
-    width: 90%;
+    width: 100%;
+    height: 2em;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0.4em;
     color: white;
+    border-radius: 0.3em;
+    border: 0px;
     font-family: 'NanumSquare',sans-serif;
     background-color: rgb(219, 124, 124);
   }
 
-  //::placeholder{ padding-left: 1em; }
+  ::placeholder{ padding-left: 1em; }
 }
 
 #dminlogo {
