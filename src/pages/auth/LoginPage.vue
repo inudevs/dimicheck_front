@@ -1,24 +1,27 @@
 <template>
-<div class="main">
-  <div class="main__left">
-    <div class="loginform">
-      <span class="loginform__textone">인원체크 도우미</span><br>
-      <span class="loginform__texttwo">디미체크</span>
-      <div class="loginbox">
-        <input type="text" placeholder="디미고인 아이디" class="loginbox__text"><br>
-        <input type="password" placeholder="디미고인 비밀번호" class="loginbox__text">
+<div>
+  <div class="main">
+    <div class="main__left">
+      <div class="login">
+        <span class="login__maintitle">디미체크</span>
+        <div class="login__form">
+          <input type="text" placeholder="디미고인 아이디" class="login__text"><br>
+          <input type="password" placeholder="디미고인 비밀번호" class="login__text">
+        </div>
+        <button class="login__loginbutton" @click="$router.push({name: 'mainpage'})">
+          로그인
+        </button>
+        <span class="login__dminbutton" @click="openNewtap()">
+          디미고인 바로가기
+        </span>
       </div>
-      <span class="loginform__textbutton" @click="$router.push({name: 'main_page'})">
-        디미고 계정으로 로그인
-      </span><br>
-      <button class="loginform__dminbutton" @click="openNewtap()">
-        <img src="./../../assets/dimigoin_logo.png" id="dminlogo">
-        디미고인 바로가기
-      </button>
+    </div>
+    <div class="main__right" v-if="winwidth > 500">
+      <img src="./../../assets/loginpage_img.png" id="backimg">
     </div>
   </div>
-  <div class="main__right">
-    <img src="./../../assets/loginpage_img.png" id="rightimg">
+  <div class="footer">
+    <span class="footer__copyright">COPYRIGHT (c) 2019.Team INU</span>
   </div>
 </div>
 </template>
@@ -30,104 +33,182 @@ export default {
       window.open('https://dimigo.in')
     },
   },
+  data() {
+    return {
+      winwidth: screen.availWidth,
+      winheigth: screen.availHeight
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-
-#rightimg {
-  width: 90%;
-  height: auto;
-  margin-top: 7em;
-}
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 440px) {
+    display: flex;
+    flex-direction: row;
+  }
 
   &__left {
-    width: 40%;
+    width: 100%;
+
+    @media (min-width: 440px) {
+      width: 40%
+    }
   }
 
   &__right {
-    width: 60%;
+    width: 100%;
+    @media (min-width: 440px) {
+      width: 60%
+    }
   }
 }
 
-.loginform {
-  margin-left: 8em;
-  margin-top: 9em;
-  width: 30em;
-
-  &__textone {
-    font-size: 3em;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: 200;
-   }
-
-  &__texttwo {
-    font-size: 4em;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: 400;
+.login {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 440px) {
+    width: 75%;
+    margin-top: 10em;
+    float: right;
   }
 
-  &__textbutton {
-    float: right;
-    font-size: 1em;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: 700;
-    color: rgb(255, 81, 191);
+  &__maintitle {
+    margin-left: 0.1em;
+    font-size: 2.5em;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 100;
+    color: rgb(219, 124, 124);
+    @media (min-width: 440px) {
+      margin-left: 0.1em;
+      font-size: 3.5em;
+      font-family: 'Black Han Sans', sans-serif;
+      font-weight: 100;
+      color: rgb(219, 124, 124);
+    }
+  }
 
-    &:hover {
+  &__form {
+    margin-top: 0.5em;
+    @media (min-width: 440px) {
+      margin-top: 3em;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    height: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(243, 243, 243);
+    border: 0.1em solid white;
+    outline-style: none;
+    font-family: 'NanumSquare', sans-serif;
+  }
+
+  ::placeholder { 
+    padding-left: 1em;
+    color: rgb(146, 145, 145);
+    font-family: 'NanumSquare', sans-serif; 
+  }
+
+  &__loginbutton {
+    width: 100%;
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    color: white;
+    border-radius: 0.3em;
+    border: 0px;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: rgb(219, 124, 124);
+
+    &:hover {   
+      transition-property: background-color, color;
+      transition-duration: 200ms;
+      transition-timing-function: ease-out;
       cursor: pointer;
+      background-color: rgb(219, 124, 124);
+      color: white;
+    }
+
+    @media (min-width: 440px) {
+      transition-property: background-color, color;
+      transition-duration: 200ms;
+      transition-timing-function: ease-out;
+      width: 100%;
+      height: 3em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      color: gray;
+      border-radius: 0.3em;
+      border: 0px;
+      font-family: 'NanumSquare', sans-serif;
+      font-size: 1em;
+      font-weight: 500;
+      background-color: rgb(243, 243, 243);      
     }
   }
 
   &__dminbutton {
-    margin-top: 6em;
-    width: 100%;
-    text-align: left;
-    font-size: 1em;
     font-family: 'NanumSquare', sans-serif;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 0.4em;
-    border: 0.06em solid rgb(211, 211, 211);
-    outline-style: none;
-
+    color: gray;
+    margin-left: auto;
+    margin-top: 1em;
+    
     &:hover {
       cursor: pointer;
+    }
+    
+    @media (min-width: 440px) {
+      margin-top: 3em;
     }
   }
 }
 
-.loginbox {
-  margin-top: 3em;
+#dminlogo {
+  width: 1em;
+}
 
-  &__text {
-    width: 96%;
-    height: 2.8em;
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
-    background-color: rgb(249, 249, 249);
-    border-radius: 0.4em;
-    border: 0.1em solid white;
-    padding-left: 1em;
-    outline-style: none;
+.footer {
+  background-color: rgb(231, 231, 231);
+  margin-top: 1em;
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__copyright {
+    font-family: 'NanumSquare', sans-serif;
+    color: gray;
+    font-size: 1em;
   }
 
-  ::placeholder {
-    color: rgb(211, 211, 211);
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: 400;
+  @media (max-width: 440px) {
+    margin-top: 24em;
   }
 }
 
-#dminlogo{
-  width: 1.8em;
-
+#backimg {
+  width: 90%;
+  margin-right: 2em;
+  margin-top: 8em;
 }
 </style>

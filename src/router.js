@@ -5,7 +5,6 @@ Vue.use(Router)
 
 const LoginPage = () => import('./pages/auth/LoginPage.vue')
 const MainPage = () => import('./pages/MainPage.vue')
-const TestPage = () => import('./pages/auth/TestPage.vue')
 
 export default new Router({
   mode: 'history',
@@ -13,18 +12,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'testpage',
-      component: TestPage,
+      name: 'loginpage',
+      component: LoginPage,
     },
     {
       path: '/main',
       name: 'mainpage',
       component: MainPage,
-    },
-    {
-      path: '/loginpage',
-      name: 'loginpage',
-      component: LoginPage,
     },
   ],
 })
