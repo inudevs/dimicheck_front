@@ -138,14 +138,14 @@ export default {
     font-family: 'NanumSquare', sans-serif;
     font-size: 1em;
     font-weight: 500;
-    background-color: rgb(219, 124, 124);
+    background-color: rgb(218, 129, 129);
 
     &:hover {   
       transition-property: background-color, color;
       transition-duration: 200ms;
       transition-timing-function: ease-out;
       cursor: pointer;
-      background-color: rgb(219, 124, 124);
+      background-color: rgb(214, 103, 103);
       color: white;
     }
 
@@ -153,18 +153,7 @@ export default {
       transition-property: background-color, color;
       transition-duration: 200ms;
       transition-timing-function: ease-out;
-      width: 100%;
-      height: 3em;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0;
-      color: gray;
-      border-radius: 0.3em;
-      border: 0px;
-      font-family: 'NanumSquare', sans-serif;
-      font-size: 1em;
-      font-weight: 500;
-      background-color: rgb(243, 243, 243);      
+      margin-top: 0
     }
   }
 
