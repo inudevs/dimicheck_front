@@ -42,6 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
 
 .main {
   display: flex;
@@ -69,7 +70,7 @@ export default {
 }
 
 .login {
-  width: 90%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
@@ -82,24 +83,38 @@ export default {
   }
 
   &__maintitle {
-    margin-left: 0.4em;
-    font-size: 1.3em;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: 600;
+    margin-left: 0.1em;
+    font-size: 2em;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 100;
+    color: rgb(219, 124, 124);
   }
 
   &__text {
-    width: 100%;
+    width: 90%;
     height: 2.8em;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(243, 243, 243);
-    border-radius: 2em;
     border: 0.1em solid white;
     outline-style: none;
+    //border-radius로 인해 글자 + 인풋 밀어야됨
+    //placeholder에 하면 인풋하는게 안밀리고, 여기다 밀면 둘다 밀리지만 div크기보다 커짐
+    padding-left: 1em;
   }
 
-  ::placeholder{ padding-left: 1em; }
+  &__loginbutton {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'NanumSquare',sans-serif;
+    background-color: rgb(219, 124, 124);
+  }
+
+  //::placeholder{ padding-left: 1em; }
 }
 
 #dminlogo {
