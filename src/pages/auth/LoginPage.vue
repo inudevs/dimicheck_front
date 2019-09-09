@@ -35,8 +35,8 @@ export default {
   },
   data() {
     return {
-      winwidth: screen.availWidth,
-      winheigth: screen.availHeight
+      winwidth: window.screen.availWidth,
+      winheigth: window.screen.availHeight,
     }
   },
 }
@@ -152,9 +152,9 @@ export default {
     box-sizing: border-box;
   }
 
-  ::placeholder { 
+  ::placeholder {
     color: rgb(146, 145, 145);
-    font-family: 'NanumSquare', sans-serif; 
+    font-family: 'NanumSquare', sans-serif;
   }
 
   &__loginbutton {
@@ -184,6 +184,7 @@ export default {
       transition-property: background-color, color;
       transition-duration: 200ms;
       transition-timing-function: ease-out;
+      margin-top: 0;
     }
   }
 
