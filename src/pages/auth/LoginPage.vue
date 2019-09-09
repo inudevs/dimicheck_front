@@ -118,13 +118,14 @@ export default {
     border: 0.1em solid white;
     outline-style: none;
     font-family: 'NanumSquare', sans-serif;
+    padding-left: 1em;
   }
 
-  ::placeholder { 
-    padding-left: 1em;
-    color: rgb(146, 145, 145);
-    font-family: 'NanumSquare', sans-serif; 
-  }
+  // ::placeholder { 
+  //   padding-left: 1em;
+  //   color: rgb(146, 145, 145);
+  //   font-family: 'NanumSquare', sans-serif; 
+  // }
 
   &__loginbutton {
     width: 100%;
@@ -140,7 +141,7 @@ export default {
     font-weight: 500;
     background-color: rgb(218, 129, 129);
 
-    &:hover {   
+    &:hover {
       transition-property: background-color, color;
       transition-duration: 200ms;
       transition-timing-function: ease-out;
@@ -162,11 +163,9 @@ export default {
     color: gray;
     margin-left: auto;
     margin-top: 1em;
-    
     &:hover {
       cursor: pointer;
     }
-    
     @media (min-width: 440px) {
       margin-top: 3em;
     }
