@@ -76,24 +76,24 @@ export default {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3em;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   @media (min-width: 440px) {
     width: 75%;
-    margin-top: 10em;
+    margin-top: 10rem;
     float: right;
   }
 
   &__maintitle {
-    margin-left: 0.1em;
-    font-size: 2.5em;
+    margin-left: 0.1rem;
+    font-size: 2.5rem;
     font-family: 'Black Han Sans', sans-serif;
     font-weight: 100;
     color: rgb(219, 124, 124);
     @media (min-width: 440px) {
-      margin-left: 0.1em;
-      font-size: 3.5em;
+      margin-left: 0.1rem;
+      font-size: 3.5rem;
       font-family: 'Black Han Sans', sans-serif;
       font-weight: 100;
       color: rgb(219, 124, 124);
@@ -101,51 +101,55 @@ export default {
   }
 
   &__form {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     @media (min-width: 440px) {
-      margin-top: 3em;
+      margin-top: 3rem;
     }
   }
 
   // &__text {
   //   width: 100%;
-  //   height: 3em;
-  //   margin-top: 0.5em;
-  //   margin-bottom: 0.5em;
+  //   height: 3rem;
+  //   margin-top: 0.5rem;
+  //   margin-bottom: 0.5rem;
   //   margin-left: auto;
   //   margin-right: auto;
   //   background-color: rgb(243, 243, 243);
   //   border: 0.1em solid white;
   //   outline-style: none;
-  //   padding-left: 1em;
+  //   padding-left: 1rem;
   // }
 
   &__id {
     font-family: 'NanumSquare', sans-serif;
     width: 100%;
-    height: 3em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(243, 243, 243);
     border: 0.1em solid white;
+    border-radius: 0.3rem;
     outline-style: none;
-    padding-left: 1em;
+    padding-left: 1rem;
+    box-sizing: border-box;
   }
 
   &__pw {
     font-family: sans-serif;
     width: 100%;
-    height: 3em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(243, 243, 243);
     border: 0.1em solid white;
+    border-radius: 0.3rem;
     outline-style: none;
-    padding-left: 1em;
+    padding-left: 1rem;
+    box-sizing: border-box;
   }
 
   ::placeholder { 
@@ -155,15 +159,15 @@ export default {
 
   &__loginbutton {
     width: 100%;
-    height: 3em;
+    height: 3rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 1rem;
     color: white;
-    border-radius: 0.3em;
+    border-radius: 0.3rem;
     border: 0px;
     font-family: 'NanumSquare', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
     background-color: rgb(218, 129, 129);
 
@@ -180,7 +184,6 @@ export default {
       transition-property: background-color, color;
       transition-duration: 200ms;
       transition-timing-function: ease-out;
-      margin-top: 0
     }
   }
 
@@ -188,41 +191,41 @@ export default {
     font-family: 'NanumSquare', sans-serif;
     color: gray;
     margin-left: auto;
-    margin-top: 1em;
+    margin-top: 3rem;
     &:hover {
       cursor: pointer;
     }
     @media (min-width: 440px) {
-      margin-top: 3em;
+      margin-top: 1rem;
     }
   }
 }
 
 #dminlogo {
-  width: 1em;
+  width: 1rem;
 }
 
 .footer {
   background-color: rgb(231, 231, 231);
-  margin-top: 1em;
-  height: 7em;
+  margin-top: 1rem;
+  height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   &__copyright {
     font-family: 'NanumSquare', sans-serif;
     color: gray;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   @media (max-width: 440px) {
-    margin-top: 24em;
+    margin-top: 24rem;
   }
 }
 
 #backimg {
   width: 90%;
-  margin-right: 2em;
-  margin-top: 8em;
+  margin-right: 2rem;
+  margin-top: 8rem;
 }
 </style>

@@ -25,7 +25,7 @@ export default {
 .top {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
+  margin-top: 5rem;
   display: flex;
   width: 80%;
 

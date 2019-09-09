@@ -39,7 +39,7 @@ export default {
 #rightimg {
   width: 90%;
   height: auto;
-  margin-top: 7em;
+  margin-top: 7rem;
 }
 
 .main {
@@ -56,25 +56,25 @@ export default {
 }
 
 .loginform {
-  margin-left: 8em;
-  margin-top: 9em;
-  width: 30em;
+  margin-left: 8rem;
+  margin-top: 9rem;
+  width: 30rem;
 
   &__textone {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'NanumSquare', sans-serif;
     font-weight: 200;
    }
 
   &__texttwo {
-    font-size: 4em;
+    font-size: 4rem;
     font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
   }
 
   &__textbutton {
     float: right;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'NanumSquare', sans-serif;
     font-weight: 700;
     color: rgb(255, 81, 191);
@@ -85,16 +85,16 @@ export default {
   }
 
   &__dminbutton {
-    margin-top: 6em;
+    margin-top: 6rem;
     width: 100%;
     text-align: left;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 0.4em;
+    border-radius: 0.4rem;
     border: 0.06em solid rgb(211, 211, 211);
     outline-style: none;
 
@@ -105,17 +105,17 @@ export default {
 }
 
 .loginbox {
-  margin-top: 3em;
+  margin-top: 3rem;
 
   &__text {
     width: 96%;
-    height: 2.8em;
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
+    height: 2.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
     background-color: rgb(249, 249, 249);
-    border-radius: 0.4em;
+    border-radius: 0.4rem;
     border: 0.1em solid white;
-    padding-left: 1em;
+    padding-left: 1rem;
     outline-style: none;
   }
 
@@ -127,7 +127,7 @@ export default {
 }
 
 #dminlogo{
-  width: 1.8em;
+  width: 1.8rem;
 
 }
 </style>
