@@ -5,8 +5,8 @@
       <div class="login">
         <span class="login__maintitle">디미체크</span>
         <div class="login__form">
-          <input type="text" placeholder="디미고인 아이디" class="login__text"><br>
-          <input type="password" placeholder="디미고인 비밀번호" class="login__text">
+          <input type="text" placeholder="디미고인 아이디" class="login__id"><br>
+          <input type="password" placeholder="디미고인 비밀번호" class="login__pw">
         </div>
         <button class="login__loginbutton" @click="$router.push({name: 'mainpage'})">
           로그인
@@ -107,7 +107,21 @@ export default {
     }
   }
 
-  &__text {
+  // &__text {
+  //   width: 100%;
+  //   height: 3em;
+  //   margin-top: 0.5em;
+  //   margin-bottom: 0.5em;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   background-color: rgb(243, 243, 243);
+  //   border: 0.1em solid white;
+  //   outline-style: none;
+  //   padding-left: 1em;
+  // }
+
+  &__id {
+    font-family: 'NanumSquare', sans-serif;
     width: 100%;
     height: 3em;
     margin-top: 0.5em;
@@ -117,15 +131,27 @@ export default {
     background-color: rgb(243, 243, 243);
     border: 0.1em solid white;
     outline-style: none;
-    font-family: 'NanumSquare', sans-serif;
     padding-left: 1em;
   }
 
-  // ::placeholder { 
-  //   padding-left: 1em;
-  //   color: rgb(146, 145, 145);
-  //   font-family: 'NanumSquare', sans-serif; 
-  // }
+  &__pw {
+    font-family: sans-serif;
+    width: 100%;
+    height: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(243, 243, 243);
+    border: 0.1em solid white;
+    outline-style: none;
+    padding-left: 1em;
+  }
+
+  ::placeholder { 
+    color: rgb(146, 145, 145);
+    font-family: 'NanumSquare', sans-serif; 
+  }
 
   &__loginbutton {
     width: 100%;
