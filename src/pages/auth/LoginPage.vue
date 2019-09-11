@@ -50,6 +50,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color:rgb(211, 211, 211);
 
   @media (min-width: 440px) {
     display: flex;
@@ -162,7 +163,7 @@ export default {
     height: 3rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: white;
     border-radius: 0.3rem;
     border: 0px;
@@ -184,7 +185,6 @@ export default {
       transition-property: background-color, color;
       transition-duration: 200ms;
       transition-timing-function: ease-out;
-      margin-top: 0;
     }
   }
 
@@ -192,12 +192,9 @@ export default {
     font-family: 'NanumSquare', sans-serif;
     color: gray;
     margin-left: auto;
-    margin-top: 3rem;
+    margin-top: 1.25rem;
     &:hover {
       cursor: pointer;
-    }
-    @media (min-width: 440px) {
-      margin-top: 1rem;
     }
   }
 }

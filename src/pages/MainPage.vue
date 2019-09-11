@@ -39,8 +39,4 @@ export default {
     background-color: yellow;
   }
 }
-
-.userinfo {
-
-}
 </style>
