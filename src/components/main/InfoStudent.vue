@@ -18,13 +18,16 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
 .info
 {
     display: flex;
-    border-radius: 0.5em 0.5em 0.5em 0.5em;
-    margin: 0em 3em 0em 3em;
+    border-radius: 0.5em 0.5em 0.5em 0.5rem;
+    margin: 0em 3em 0em 3rem;
     background-color: #FFFFFF;
-    height: 5em;
+    height: 5rem;
 
     &__base {
         margin: auto;
@@ -51,6 +54,7 @@ export default {
         width: 70%;
         padding-left: 1rem;
         font-size: 1.3rem;
+        font-family: 'NanumSquare', sans-serif;
     }
 }
 #profile
