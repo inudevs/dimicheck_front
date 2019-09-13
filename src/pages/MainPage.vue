@@ -1,22 +1,22 @@
 <script>
-import InfoStudent from '@/components/main/InfoStudent'
-import MyLocate from '@/components/main/MyLocate'
-import MainNotice from '@/components/main/MainNotice'
+import InfoStudent from '@/components/main/InfoStudent.vue'
+import MyLocate from '@/components/main/MyLocate.vue'
+import MainNotice from '@/components/main/MainNotice.vue'
 
 export default {
   name: 'Main',
   components: {
     InfoStudent,
     MyLocate,
-    MainNotice
-  }
+    MainNotice,
+  },
 }
 </script>
 
 <template>
 <div id="back">
   <div class="page">
-    
+
     <div class="page__top">
       <div class="page__left">
         <info-student />
