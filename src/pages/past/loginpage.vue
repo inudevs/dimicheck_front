@@ -62,20 +62,17 @@ export default {
 
   &__textone {
     font-size: 3rem;
-    font-family: 'NanumSquare', sans-serif;
     font-weight: 200;
    }
 
   &__texttwo {
     font-size: 4rem;
-    font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
   }
 
   &__textbutton {
     float: right;
     font-size: 1rem;
-    font-family: 'NanumSquare', sans-serif;
     font-weight: 700;
     color: rgb(255, 81, 191);
 
@@ -89,7 +86,6 @@ export default {
     width: 100%;
     text-align: left;
     font-size: 1rem;
-    font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -121,7 +117,6 @@ export default {
 
   ::placeholder {
     color: rgb(211, 211, 211);
-    font-family: 'NanumSquare', sans-serif;
     font-weight: 400;
   }
 }

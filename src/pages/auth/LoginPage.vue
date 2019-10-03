@@ -43,9 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
-
 .main {
   display: flex;
   flex-direction: column;
@@ -122,7 +119,6 @@ export default {
   // }
 
   &__id {
-    font-family: 'NanumSquare', sans-serif;
     width: 100%;
     height: 3rem;
     margin-top: 0.5rem;
@@ -155,7 +151,6 @@ export default {
 
   ::placeholder {
     color: rgb(146, 145, 145);
-    font-family: 'NanumSquare', sans-serif;
   }
 
   &__loginbutton {
@@ -167,7 +162,6 @@ export default {
     color: white;
     border-radius: 0.3rem;
     border: 0px;
-    font-family: 'NanumSquare', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     background-color: rgb(218, 129, 129);
@@ -189,7 +183,6 @@ export default {
   }
 
   &__dminbutton {
-    font-family: 'NanumSquare', sans-serif;
     color: gray;
     margin-left: auto;
     margin-top: 1.25rem;
@@ -211,7 +204,6 @@ export default {
   justify-content: center;
   align-items: center;
   &__copyright {
-    font-family: 'NanumSquare', sans-serif;
     color: gray;
     font-size: 1rem;
   }

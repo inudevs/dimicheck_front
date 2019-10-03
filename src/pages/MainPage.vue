@@ -1,14 +1,25 @@
 <script>
-import InfoStudent from '@/components/main/InfoStudent.vue'
-import MyLocate from '@/components/main/MyLocate.vue'
-import MainNotice from '@/components/main/MainNotice.vue'
+import Location from '@/components/main/Location.vue'
+import Notice from '@/components/main/Notice.vue'
+import Profile from '@/components/main/Profile.vue'
 
 export default {
   name: 'Main',
   components: {
-    InfoStudent,
-    MyLocate,
-    MainNotice,
+    Location,
+    Notice,
+    Profile
+  },
+  data() {
+    return {
+      notice: [
+        { date: new Date(), content: '국어 수능특강 검사' },
+        { date: new Date(), content: '국어 수능특강 검사' },
+        { date: new Date(), content: '국어 수능특강 검사' },
+        { date: new Date(), content: '국어 수능특강 검사' },
+        { date: new Date(), content: '국어 수능특강 검사' }
+      ],
+    }
   },
 }
 </script>
@@ -18,13 +29,13 @@ export default {
   <div class="page">
 
     <div class="page__top">
-      <div class="page__left">
-        <info-student />
-        <my-locate />
-      </div>
-      <div class="page__right">
-        <main-notice />
-      </div>
+      <section>
+        <Profile />
+        <Location />
+      </section>
+      <section>
+        <Notice :notice="notice" />
+      </section>
     </div>
 
     <div class="page__bottom">
@@ -35,14 +46,11 @@ export default {
   </template>
 
 <style lang="scss" scoped>
-#back
-{
-  height: 58em;
+#back {
   background-color: #F5F5F5;
 }
 
-.page
-{
+.page {
   width: 60%;
   margin: auto;
   display: flex;
@@ -52,20 +60,15 @@ export default {
     flex-direction: row;
     width: 100%;
     margin-top: 10em;
-    height: 25em;
+    height: 18em;
   }
 
-  &__bottom {
-  }
-
-  &__left {
-    margin: 0;
-    width: 50%;
-  }
-
-  &__right {
-    margin: 0;
-    width: 50%;
+  section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    margin: .5rem;
   }
 }
 </style>
