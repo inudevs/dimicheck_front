@@ -8,7 +8,7 @@ export default {
   components: {
     Location,
     Notice,
-    Profile
+    Profile,
   },
   data() {
     return {
@@ -17,7 +17,7 @@ export default {
         { date: new Date(), content: '국어 수능특강 검사' },
         { date: new Date(), content: '국어 수능특강 검사' },
         { date: new Date(), content: '국어 수능특강 검사' },
-        { date: new Date(), content: '국어 수능특강 검사' }
+        { date: new Date(), content: '국어 수능특강 검사' },
       ],
     }
   },

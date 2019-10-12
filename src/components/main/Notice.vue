@@ -5,12 +5,12 @@ export default {
   props: {
     notice: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   filters: {
-    filterDate: time => format(time, 'MM월 dd일')
-  }
+    filterDate: time => format(time, 'MM월 dd일'),
+  },
 }
 </script>
 

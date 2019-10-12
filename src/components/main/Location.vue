@@ -3,9 +3,9 @@ export default {
   props: {
     location: {
       type: Array,
-      default: () => ['교실', '교실']
-    }
-  }
+      default: () => ['교실', '교실'],
+    },
+  },
 }
 </script>
 
