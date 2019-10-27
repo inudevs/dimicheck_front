@@ -2,6 +2,7 @@
 import Location from '@/components/main/Location.vue'
 import Notice from '@/components/main/Notice.vue'
 import Profile from '@/components/main/Profile.vue'
+import { format } from 'date-fns'
 
 export default {
   name: 'Main',
@@ -39,7 +40,9 @@ export default {
     </div>
 
     <div class="page__bottom">
-
+      <section>
+        <!-- <h1>{{ format(new Date(), 'yyyy년 mm월 dd일 ccc') }}</h1> -->
+      </section>
     </div>
   </div>
 </div>
@@ -48,12 +51,14 @@ export default {
 <style lang="scss" scoped>
 #back {
   background-color: #F5F5F5;
+  height: 100vh;
 }
 
 .page {
   width: 60%;
   margin: auto;
   display: flex;
+  flex-direction: column;
 
   &__top {
     display: flex;
@@ -61,6 +66,10 @@ export default {
     width: 100%;
     margin-top: 10em;
     height: 18em;
+  }
+
+  &__bottom {
+
   }
 
   section {
