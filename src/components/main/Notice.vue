@@ -1,15 +1,10 @@
 <script>
-import { format } from 'date-fns'
-
 export default {
   props: {
     notice: {
       type: Array,
       default: () => [],
     },
-  },
-  filters: {
-    filterDate: time => format(time, 'MM월 dd일'),
   },
 }
 </script>
@@ -22,7 +17,9 @@ export default {
         v-for="(item, idx) in notice"
         :key="idx"
       >
-        <span class="notice__date">{{ item.date | filterDate }}</span>
+        <span class="notice__date">
+          {{ item.date | moment('MM월 DD일') }}
+        </span>
         <span class="notice__content">{{ item.content }}</span>
       </div>
     </div>
@@ -39,6 +36,7 @@ export default {
   display: flex;
   flex: 1;
   flex-direction: column;
+  box-shadow: 14px 10px 32px -19px rgba(0,0,0,0.17);
 
   &__list {
     display: flex;
@@ -65,13 +63,13 @@ export default {
 
   &__date {
     color: #707070;
-    font-size: 19px;
+    font-size: 1.1rem;
     margin-right: 31px;
   }
 
   &__content {
     color: #707070;
-    font-size: 16px;
+    font-size: 0.9rem;
   }
 
   &__bottom {
@@ -79,7 +77,7 @@ export default {
     display: flex;
     justify-content: center;
     margin-top: auto;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 700;
     padding: 0.9rem 0;
     border-top: 1px solid #E8E8E8;

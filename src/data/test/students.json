@@ -1,0 +1,23 @@
+[
+  {
+    "grade": 1,
+    "klass": 6,
+    "number": 1,
+    "status": [4, 4],
+    "name": "김누구"
+  },
+  {
+    "grade": 1,
+    "klass": 6,
+    "number": 2,
+    "status": [4, 4],
+    "name": "김누구"
+  },
+  {
+    "grade": 1,
+    "klass": 6,
+    "number": 3,
+    "status": [4, 4],
+    "name": "김누구"
+  }
+]

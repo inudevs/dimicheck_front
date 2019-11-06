@@ -24,6 +24,7 @@
 <style lang="scss" scoped>
 .profile {
   background-color: white;
+  box-shadow: 14px 10px 32px -19px rgba(0,0,0,0.17);
   border-radius: 6px;
   padding: 1.2rem 1.5rem;
   display: flex;
@@ -43,7 +44,7 @@
   }
 
   span {
-    font-size: 17px;
+    font-size: 1rem;
   }
 
   &__serial {

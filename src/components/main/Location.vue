@@ -43,10 +43,11 @@ export default {
   display: flex;
   flex: 1;
   font-weight: 700;
+  box-shadow: 14px 10px 32px -19px rgba(0,0,0,0.17);
 
   &__content {
     width: 100%;
-    font-size: 19px;
+    font-size: 1rem;
   }
 
   &__top {

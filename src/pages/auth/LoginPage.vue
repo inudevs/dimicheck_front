@@ -3,7 +3,7 @@
   <div class="main">
     <div class="main__left">
       <div class="login">
-        <span class="login__maintitle">디미체크</span>
+        <span class="login__title">디미체크</span>
         <div class="login__form">
           <input type="text" placeholder="디미고인 아이디" class="login__id"><br>
           <input type="password" placeholder="디미고인 비밀번호" class="login__pw">
@@ -83,7 +83,7 @@ export default {
     float: right;
   }
 
-  &__maintitle {
+  &__title {
     margin-left: 0.1rem;
     font-size: 2.5rem;
     font-family: 'Black Han Sans', sans-serif;
